@@ -55,6 +55,25 @@ body {
 	-webkit-text-size-adjust: none;
 }
 
+/* custom */
+.esq {
+	float: left;
+}
+
+.dir {
+	float: right;
+}
+
+.footer-custom {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+
+/* custom */
+
 mark {
 	background-color: transparent;
 	color: inherit;
@@ -588,7 +607,7 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out;
-		color: #98c593;
+		color: rgb(74, 82, 87);
 	}
 
 	sub {
@@ -1148,6 +1167,7 @@ input, select, textarea {
 
 	ul.icons {
 		cursor: default;
+
 	}
 
 		ul.icons li {
@@ -1837,7 +1857,8 @@ input, select, textarea {
 			}
 
 		#header nav {
-			position: absolute;
+			/*position: absolute;*/
+			position: relative;
 			right: 0.5em;
 			top: 0;
 			height: 3em;
@@ -2229,7 +2250,7 @@ input, select, textarea {
 /* Intro */
 
 	#intro {
-		background: url("images/overlay.png"), url("../../images/intro.jpg");
+		background: url("images/overlay.png"), url("../../images/Capturar.JPG");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
