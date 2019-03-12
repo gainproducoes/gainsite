@@ -7,27 +7,26 @@
 <html>
 
 <head>
-	<script type="text/javascript" src="v4.0.0/dist/amplitude.js">
-	Amplitude.init({
-		"songs": [
-			{
-				"name": "Song Name 1",
-				"artist": "Artist Name",
-				"album": "Album Name",
-				"url": "/audio/Da Ralé - Dani California.mp3",
-				"cover_art_url": "/cover/art/url.jpg"
-			},
-			{
-				"name": "Song Name 3",
-				"artist": "Artist Name",
-				"album": "Album Name",
-				"url": "/audio/Da Ralé - Dani California.mp3",
-				"cover_art_url": "/cover/art/url.jpg"
-			}
-		],
-	});
-	</script>
 	<title>GAIN Produções</title>
+	<!-- Include Resource Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/foundation.min.css"/>
+
+    <!-- Include font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i" rel="stylesheet">
+
+		<!--
+			Include Resource Javascript
+
+			NOTE: These are for handling things outside of the scope of AmplitudeJS
+		-->
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/foundation.min.js"></script>
+
+		<!-- Include Amplitude JS -->
+		<script type="text/javascript" src="v4/dist/amplitude.js"></script>
+
+		<!-- Include Style Sheet -->
+	<link rel="stylesheet" type="text/css" href="css/app.css"/>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -67,7 +66,7 @@
 
 	<!-- Intro -->
 	<section id="intro" class="main style1 dark fullscreen">
-			<span class="amplitude-play"></span>
+			
 	</section>
 
 	<!-- One -->
@@ -93,21 +92,7 @@
 				Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu,
 				id varius justo euismod in. Curabitur egestas consectetur magna.</p>
 		</div>
-		<div>
-			<header>
-				<h2>Playlist</h2>
-			</header>
-			<p>Da Ralé - Dani California3</p>
-			<audio controls>
-  		  <source src="audio/Da Ralé - Dani California.mp3" type="audio/mpeg">
-					Your browser does not support the audio element.
-			</audio>
-			<p>Da Ralé - Interstate Love Song</p>
-			<audio controls>
-  		  <source src="audio/Da Ralé - Interstate Love Song.mp3" type="audio/mpeg">
-					Your browser does not support the audio element.
-			</audio>
-		</div>
+		
 		<a href="#work" class="button style2 down anchored">Next</a>
 	</section>
 
@@ -142,7 +127,127 @@
 						<iframe class="image fit" height="282" src="https://www.youtube.com/embed/p_-kx3z41Eg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</article>
 			</div>
-
+			<div class="content box style2">
+					<header>
+						<h2>Quem somos?</h2>
+					</header>
+					<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
+						Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu,
+						id varius justo euismod in. Curabitur egestas consectetur magna.</p>
+					<div class="row">
+					<div class="large-4 medium-6 small-12 large-centered medium-centered columns">
+					  <div id="flat-black-player-container">
+						  <div id="list-screen" class="slide-in-top">
+			  
+							<div id="list-screen-header" class="hide-playlist">
+							  <img id="up-arrow" src="img/up.svg"/>
+							  Clique para fechar a lista
+							</div>
+			  
+							<div id="list">
+							  <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="0">
+								<span class="song-number-now-playing">
+								  <span class="number">1</span>
+								  <img class="now-playing" src="img/now-playing.svg"/>
+								</span>
+			  
+								<div class="song-meta-container">
+								  <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="0"></span>
+								  <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="0"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="0"></span></span>
+								</div>
+			  
+								<span class="song-duration">3:12<span></span>
+							  </div>
+							  <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="1">
+								<span class="song-number-now-playing">
+								  <span class="number">2</span>
+								  <img class="now-playing" src="img/now-playing.svg"/>
+								</span>
+			  
+								<div class="song-meta-container">
+								  <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="1"></span>
+								  <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="1"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="1"></span></span>
+								</div>
+			  
+								<span class="song-duration">4:56<span>
+							  </div>
+			  
+							</div>
+			  
+							<div id="list-screen-footer">
+							  <div id="list-screen-meta-container">
+								<span data-amplitude-song-info="name" class="song-name"></span>
+			  
+								<div class="song-artist-album">
+								  <span data-amplitude-song-info="artist"></span>
+								</div>
+							  </div>
+							  <div class="list-controls">
+								<div class="list-previous amplitude-prev"></div>
+								<div class="list-play-pause amplitude-play-pause"></div>
+								<div class="list-next amplitude-next"></div>
+							  </div>
+							</div>
+						  </div>
+						  <div id="player-screen">
+							<div class="player-header down-header">
+							  <img id="down" src="img/down.svg"/>
+							  Clique para abrir a lista
+							</div>
+							<div id="player-top">
+							  <img data-amplitude-song-info="cover_art_url"/>
+							</div>
+							<div id="player-progress-bar-container">
+							  <progress id="song-played-progress" class="amplitude-song-played-progress"></progress>
+							  <progress id="song-buffered-progress" class="amplitude-buffered-progress" value="0"></progress>
+							</div>
+							<div id="player-middle">
+							  <div id="time-container">
+								<span class="amplitude-current-time time-container"></span>
+								<span class="amplitude-duration-time time-container"></span>
+							  </div>
+							  <div id="meta-container">
+								<span data-amplitude-song-info="name" class="song-name"></span>
+			  
+								<div class="song-artist-album">
+								  <span data-amplitude-song-info="artist"></span>
+								</div>
+							  </div>
+							</div>
+							<div id="player-bottom">
+							  <div id="control-container">
+			  
+								<div id="shuffle-container">
+								  <div class="amplitude-shuffle amplitude-shuffle-off" id="shuffle"></div>
+								</div>
+			  
+								<div id="prev-container">
+								  <div class="amplitude-prev" id="previous"></div>
+								</div>
+			  
+								<div id="play-pause-container">
+								  <div class="amplitude-play-pause" id="play-pause"></div>
+								</div>
+			  
+								<div id="next-container">
+								  <div class="amplitude-next" id="next"></div>
+								</div>
+			  
+								<div id="repeat-container">
+								  <div class="amplitude-repeat" id="repeat"></div>
+								</div>
+			  
+							  </div>
+			  
+							  <div id="volume-container">
+								<img src="img/volume.svg"/><input type="range" class="amplitude-volume-slider" step=".1"/>
+							  </div>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</div>
+			</div>
 		</div>
 	</section>
 
@@ -197,5 +302,37 @@
 	<script src="assets/js/main.js"></script>
 
 </body>
+<script type="text/javascript">
+	Amplitude.init({
+  "bindings": {
+	37: 'prev',
+	39: 'next',
+	32: 'play_pause'
+  },
+		"songs": [
+			{
+				"name": "Interstate Love Song",
+				"artist": "Da Ralé",
+				"album": "We Are to Answer",
+				"url": "songs/Da Ralé - Interstate Love Song.mp3",
+				"cover_art_url": "album-art/anvil.jpg"
+			},
+			{
+				"name": "Dani California",
+				"artist": "Da Ralé",
+				"album": "Ask The Dust",
+				"url": "songs/Da Rale Dani California.mp3",
+				"cover_art_url": "album-art/baralku.jpg"
+			}
+		]
+	});
 
+</script>
+
+<!--
+Include UX functions JS
+
+NOTE: These are for handling things outside of the scope of AmplitudeJS
+-->
+<script type="text/javascript" src="js/functions.js"></script>
 </html>
