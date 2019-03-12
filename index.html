@@ -7,6 +7,26 @@
 <html>
 
 <head>
+	<script type="text/javascript" src="v4.0.0/dist/amplitude.js">
+	Amplitude.init({
+		"songs": [
+			{
+				"name": "Song Name 1",
+				"artist": "Artist Name",
+				"album": "Album Name",
+				"url": "/audio/Da Ralé - Dani California.mp3",
+				"cover_art_url": "/cover/art/url.jpg"
+			},
+			{
+				"name": "Song Name 3",
+				"artist": "Artist Name",
+				"album": "Album Name",
+				"url": "/audio/Da Ralé - Dani California.mp3",
+				"cover_art_url": "/cover/art/url.jpg"
+			}
+		],
+	});
+	</script>
 	<title>GAIN Produções</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -47,9 +67,7 @@
 
 	<!-- Intro -->
 	<section id="intro" class="main style1 dark fullscreen">
-		<div class="content">
-			
-		</div>
+			<span class="amplitude-play"></span>
 	</section>
 
 	<!-- One -->
@@ -74,6 +92,21 @@
 			<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
 				Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu,
 				id varius justo euismod in. Curabitur egestas consectetur magna.</p>
+		</div>
+		<div>
+			<header>
+				<h2>Playlist</h2>
+			</header>
+			<p>Da Ralé - Dani California3</p>
+			<audio controls>
+  		  <source src="audio/Da Ralé - Dani California.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+			</audio>
+			<p>Da Ralé - Interstate Love Song</p>
+			<audio controls>
+  		  <source src="audio/Da Ralé - Interstate Love Song.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+			</audio>
 		</div>
 		<a href="#work" class="button style2 down anchored">Next</a>
 	</section>
